@@ -2,6 +2,11 @@
   text-align: center;
   margin-top: 150px;
 }
+.translate {
+  width: 224px;
+  height: 76px;
+  border: 1px solid black;
+}
 
 .circle {
   background-color: rgb(54, 122, 218);

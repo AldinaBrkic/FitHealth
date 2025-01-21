@@ -33,7 +33,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <div id="google_translate_element"></div>
+      <div className="translate" id="google_translate_element"></div>
       <h1 className="title">FitHealth</h1>
       <button className="start-button" onClick={handleStartClick}>Start</button>
     </div>
