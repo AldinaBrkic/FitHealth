@@ -1,0 +1,116 @@
+.dashboard {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.circle {
+  background-color: rgb(54, 122, 218);
+  color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  margin: 0 auto;
+  font-family:  cursive;
+}
+
+.title {
+  color:  rgb(82, 150, 244);
+  margin-top: 20px;
+  font-family: cursive;
+}
+
+.start-button {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(59, 206, 59);
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.start-button:hover {
+  background-color: darkgreen;
+}
+.menu {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.menu-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.menu-options {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  font-size: 1.5rem;
+  color: #555;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #ddd;
+}
+
+
+.translate-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.translate-container {
+  width: 200px;
+}
+
+.goog-te-combo {
+  font-size: 1.5rem;
+  color: #555;
+  background-color: #f0f0f0;
+  padding: 15px;
+  margin: 18px 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.backToFirstPage {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Promijenjeno s left na right */
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #007bff; /* Plava boja pozadine */
+  color: white; /* Bijela boja teksta */
+  border: none; /* Uklanjanje obruba */
+  border-radius: 5px; /* Zaobljeni kutovi */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Blaga sjena */
+  transition: background-color 0.3s; /* Glatka tranzicija boje pozadine */
+}
+
+.backToFirstPage:hover {
+  background-color: #0056b3; /* Tamnija plava boja pri prelasku miša */
+}
