@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fithealth/static/css/main.e48d3f24.css",
+    "main.js": "/fithealth/static/js/main.5fdc13db.js",
+    "index.html": "/fithealth/index.html",
+    "main.e48d3f24.css.map": "/fithealth/static/css/main.e48d3f24.css.map",
+    "main.5fdc13db.js.map": "/fithealth/static/js/main.5fdc13db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e48d3f24.css",
+    "static/js/main.5fdc13db.js"
+  ]
+}
