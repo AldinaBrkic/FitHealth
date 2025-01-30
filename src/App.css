@@ -1,9 +1,24 @@
 .dashboard {
-  text-align: center;
-  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Horizontalno centriranje */
+  justify-content: center;  /* Vertikalno centriranje */
+  min-height: 100vh;        /* Visina kontejnera je visina ekrana */
+  position: relative;       /* Za pravilno pozicioniranje apsolutnih elemenata */
+  margin: 0;  
+}
+
+.trElement {
+  position: absolute;
+  top: 5px;
+  bottom: 15px;;
+  right: 10px;
+  z-index: 1000; 
+  margin-bottom: 20px;
 }
 
 .circle {
+  margin-top: 0;
   background-color: rgb(54, 122, 218);
   color: white;
   width: 100px;
@@ -13,7 +28,6 @@
   align-items: center;
   justify-content: center;
   font-size: 36px;
-  margin: 0 auto;
   font-family:  cursive;
 }
 
@@ -50,7 +64,7 @@
 
 .menu-title {
   font-size: 2.5rem;
-  color: #333;
+  color: rgb(82, 150, 244);
   margin-bottom: 20px;
 }
 
@@ -61,10 +75,11 @@
 
 .menu-item {
   font-size: 1.5rem;
-  color: #555;
-  background-color: #f0f0f0;
+  color: rgb(13, 189, 13);
+  background-color: transparent;
   padding: 10px 20px;
   margin: 10px 0;
+  border: 1px solid  rgb(13, 189, 13);
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;

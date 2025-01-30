@@ -1,6 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './src/App';
-import './src/index.css';
+const http = require('http');
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+const server = http.createServer((request, response) => {
+    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.end("It works!");
+});
+
+const port =  process.env.PORT || 1311;
+server.listen(port);
+
+console.log("Server running at http://localhost:%d", port);

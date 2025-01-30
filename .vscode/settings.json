@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/6e5cfc98-3a48-4706-8bd8-b6e67a89f8c6/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/aldinak",
+    "appService.deploySubpath": "."
+}

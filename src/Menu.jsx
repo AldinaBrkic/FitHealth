@@ -11,7 +11,7 @@ const Menu = () => {
 
   return (
     <div className="menu">
-      <div className="backToFirstPage" id="dashboard" onClick={handleBackClick}>Back</div>
+      <div className="backToFirstPage"  onClick={handleBackClick}>Back</div>
       <h1 className="menu-title">FitHealth</h1>
       <ul className="menu-options">
         <li className="menu-item">Healthy Diet</li>

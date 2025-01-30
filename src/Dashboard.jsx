@@ -1,19 +1,18 @@
+// dashboard.jsx
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './App.css';
 
 const Dashboard = () => {
   const navigate = useNavigate();
 
   const handleStartClick = () => {
-    navigate('/menu');
+    navigate('/Menu');
   };
 
   useEffect(() => {
     const googleTranslateScript = document.createElement('script');
-    googleTranslateScript.src = `https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit`;
+    googleTranslateScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
     googleTranslateScript.async = true;
-    googleTranslateScript.defer = true;
 
     window.googleTranslateElementInit = () => {
       new window.google.translate.TranslateElement(
@@ -25,17 +24,20 @@ const Dashboard = () => {
     document.body.appendChild(googleTranslateScript);
 
     return () => {
-      if (googleTranslateScript) {
-        document.body.removeChild(googleTranslateScript);
-      }
+      
     };
   }, []);
 
   return (
     <div className="dashboard">
-      <div id="google_translate_element"></div>
+      <div className='trElement'>
+        <div id="google_translate_element"></div>
+      </div>
+      <div className="circle">FH</div>
       <h1 className="title">FitHealth</h1>
-      <button className="start-button" onClick={handleStartClick}>Start</button>
+      <button className="start-button" onClick={handleStartClick}>
+        Start
+      </button>
     </div>
   );
 };
